@@ -276,7 +276,7 @@ module Pipl
     def to_hash
       h = {}
       h[:search_pointer] = @search_pointer if @search_pointer && ! @search_pointer.empty?
-      h[:match] = @match if @match && ! @match.empty?
+      h[:match] = @match if @match
       h.update(fields_to_hash)
       h
     end
